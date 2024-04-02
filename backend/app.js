@@ -7,7 +7,7 @@ const cors = require('cors');
 
 
 
-mongoose.connect('mongodb://127.0.0.1:27017/quotes-db')
+mongoose.connect('mongodb+srv://guptarajat2206:G06huPSpLSDxWN3J@quotesweb.xbllcop.mongodb.net/?retryWrites=true&w=majority&appName=quotesweb')
     .then(() => console.log('Connection Open!'))
     .catch((err) => console.log(err));
 
@@ -21,7 +21,7 @@ app.use(express.json());
 
 // seed the database with the dummy quotes
 
-seedDB();
+// seedDB();
 
 app.get('/hello', (req, res) => {
     
